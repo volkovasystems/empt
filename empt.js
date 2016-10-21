@@ -55,7 +55,11 @@ var empt = function empt( object ){
 		@end-meta-configuration
 	*/
 
-	return ( Object.keys( object ).length == 0 &&
+	return ( typeof object == "object" &&
+
+		object !== null &&
+
+		Object.keys( object ).length == 0 &&
 
 		JSON.stringify( object ) == JSON.stringify( { } ) &&
 
