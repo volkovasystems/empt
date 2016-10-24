@@ -81,9 +81,7 @@ var empt = function empt( object ){
 
 	return ( object === null ||
 
-		( typeof object == "object" &&
-
-		object !== null &&
+		( object !== null &&
 
 		Object.keys( object ).length == 0 &&
 
