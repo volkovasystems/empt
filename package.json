@@ -1,6 +1,6 @@
 {
   "name": "empt",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Check if object has no enumerable properties.",
   "main": "empt.js",
   "scripts": {
@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/volkovasystems/empt/issues"
   },
-  "homepage": "https://github.com/volkovasystems/empt#readme"
+  "homepage": "https://github.com/volkovasystems/empt#readme",
+  "dependencies": {
+    "doubt": "0.0.6"
+  }
 }

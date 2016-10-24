@@ -44,7 +44,23 @@
 	@module-documentation:
 		Check if object has no enumerable properties.
 	@end-module-documentation
+
+	@include:
+		{
+			"doubt": "doubt"
+		}
+	@end-include
 */
+
+if( typeof window == "undefined" ){
+	var doubt = require( "doubt" );
+}
+
+if( typeof window != "undefined" &&
+	!( "doubt" in window ) )
+{
+	throw new Error( "doubt is not defined" );
+}
 
 var empt = function empt( object ){
 	/*;
@@ -55,7 +71,17 @@ var empt = function empt( object ){
 		@end-meta-configuration
 	*/
 
-	return ( typeof object == "object" &&
+	if( doubt( object ).AS_ARRAY ){
+		throw new Error( "invalid object" );
+	}
+
+	if( typeof object != "object" ){
+		throw new Error( "invalid object" );
+	}
+
+	return ( object === null ||
+
+		( typeof object == "object" &&
 
 		object !== null &&
 
@@ -68,7 +94,7 @@ var empt = function empt( object ){
 				let descriptor = Object.getOwnPropertyDescriptor( object, property ) || { };
 
 				return !!descriptor.enumerable;
-			} ).length == 0 );
+			} ).length == 0 ) );
 };
 
 if( typeof module != "undefined" ){

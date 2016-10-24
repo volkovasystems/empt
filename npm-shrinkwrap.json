@@ -1,5 +1,21 @@
 {
   "name": "empt",
-  "version": "0.0.1",
-  "dependencies": {}
+  "version": "0.0.2",
+  "dependencies": {
+    "doubt": {
+      "version": "0.0.6",
+      "from": "doubt@latest",
+      "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.0.6.tgz"
+    },
+    "harden": {
+      "version": "0.3.5",
+      "from": "harden@>=0.3.5 <0.4.0",
+      "resolved": "https://registry.npmjs.org/harden/-/harden-0.3.5.tgz"
+    },
+    "raze": {
+      "version": "0.0.8",
+      "from": "raze@0.0.8",
+      "resolved": "https://registry.npmjs.org/raze/-/raze-0.0.8.tgz"
+    }
+  }
 }
