@@ -47,22 +47,16 @@
 
 	@include:
 		{
-			"doubt": "doubt"
+			"doubt": "doubt",
+			"protype": "protype"
 		}
 	@end-include
 */
 
-if( typeof window == "undefined" ){
-	var doubt = require( "doubt" );
-}
+const doubt = require( "doubt" );
+const protype = require( "protype" );
 
-if( typeof window != "undefined" &&
-	!( "doubt" in window ) )
-{
-	throw new Error( "doubt is not defined" );
-}
-
-var empt = function empt( object ){
+const empt = function empt( object ){
 	/*;
 		@meta-configuration:
 			{
@@ -71,11 +65,7 @@ var empt = function empt( object ){
 		@end-meta-configuration
 	*/
 
-	if( doubt( object ).AS_ARRAY ){
-		throw new Error( "invalid object" );
-	}
-
-	if( typeof object != "object" ){
+	if( doubt( object ).AS_ARRAY || !protype( object, OBJECT ) ){
 		throw new Error( "invalid object" );
 	}
 
@@ -95,6 +85,4 @@ var empt = function empt( object ){
 			} ).length == 0 ) );
 };
 
-if( typeof module != "undefined" ){
-	module.exports = empt;
-}
+module.exports = empt;
