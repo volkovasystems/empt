@@ -48,12 +48,14 @@
 	@include:
 		{
 			"doubt": "doubt",
+			"kount": "kount",
 			"protype": "protype"
 		}
 	@end-include
 */
 
 const doubt = require( "doubt" );
+const kount = require( "kount" );
 const protype = require( "protype" );
 
 const empt = function empt( object ){
@@ -69,20 +71,7 @@ const empt = function empt( object ){
 		throw new Error( "invalid object" );
 	}
 
-	return ( object === null ||
-
-		( object !== null &&
-
-		Object.keys( object ).length == 0 &&
-
-		JSON.stringify( object ) == JSON.stringify( { } ) &&
-
-		Object.getOwnPropertyNames( object )
-			.filter( function onEachProperty( property ){
-				let descriptor = Object.getOwnPropertyDescriptor( object, property ) || { };
-
-				return !!descriptor.enumerable;
-			} ).length == 0 ) );
+	return ( object === null || kount( object ) == 0 );
 };
 
 module.exports = empt;
