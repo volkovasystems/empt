@@ -70,7 +70,7 @@ const empt = function empt( object ){
 		@end-meta-configuration
 	*/
 
-	if( doubt( object ).AS_ARRAY || !protype( object, OBJECT ) ){
+	if( doubt( object, AS_ARRAY ) || !protype( object, OBJECT ) ){
 		throw new Error( "invalid object" );
 	}
 
