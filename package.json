@@ -1,10 +1,11 @@
 {
   "name": "empt",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Check if object has no enumerable properties.",
   "main": "empt.js",
   "support": "empt.support.js",
   "deploy": "empt.deploy.js",
+  "browser": "empt.deploy.js",
   "scripts": {
     "build": "babel empt.js -o empt.support.js && webpack",
     "test": "mocha empt-test.js"
@@ -30,9 +31,9 @@
   "homepage": "https://github.com/volkovasystems/empt#readme",
   "dependencies": {
     "babel-runtime": "^6.22.0",
-    "doubt": "^0.10.0",
-    "kount": "^0.6.0",
-    "protype": "^0.11.0"
+    "doubt": "^0.11.0",
+    "kount": "^0.7.0",
+    "protype": "^0.15.0"
   },
   "devDependencies": {
     "babel-cli": "^6.22.2",
@@ -40,6 +41,6 @@
     "babel-plugin-transform-runtime": "^6.22.0",
     "babel-preset-latest": "^6.22.0",
     "source-map-loader": "^0.1.6",
-    "webpack": "^1.14.0"
+    "webpack": "^2.2.1"
   }
 }
