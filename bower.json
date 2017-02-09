@@ -1,6 +1,6 @@
 {
   "name": "empt",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Check if object has no enumerable properties.",
   "main": "empt.deploy.js",
   "authors": [
