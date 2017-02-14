@@ -1,8 +1,9 @@
 {
   "name": "empt",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "description": "Check if object has no enumerable properties.",
   "main": "empt.deploy.js",
+  "support": "empt.support.js",
   "authors": [
     "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
     "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
@@ -23,8 +24,8 @@
     "tests"
   ],
   "dependencies": {
-    "doubt": "^0.14.0",
-    "kount": "^0.7.0",
-    "protype": "^0.15.0"
+    "doubt": "^0.15.0",
+    "kount": "^0.8.0",
+    "protype": "^0.16.0"
   }
 }
