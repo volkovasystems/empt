@@ -16,4 +16,5 @@ bower install \
 doubt \
 kount \
 protype \
---save
+--save \
+--force-latest
