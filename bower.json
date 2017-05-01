@@ -1,6 +1,6 @@
 {
   "name": "empt",
-  "version": "0.21.0",
+  "version": "0.22.0",
   "description": "Check if object has no enumerable properties.",
   "main": "empt.deploy.js",
   "support": "empt.support.js",
@@ -24,7 +24,7 @@
     "tests"
   ],
   "dependencies": {
-    "doubt": "^0.25.0",
+    "doubt": "^0.26.0",
     "kount": "^0.10.0",
     "protype": "^0.21.0"
   }
