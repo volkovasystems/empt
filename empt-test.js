@@ -1,7 +1,8 @@
 "use strict";
 
+const assert = require( "assert" );
 const empt = require( "./empt.js" );
 
-console.log( empt( { } ) );
-console.log( empt( { "name": "simple" } ) );
-console.log( empt( ) );
+assert.equal( empt( { } ), true, "should be true" );
+assert.equal( empt( { "name": "simple" } ), false, "should be false" );
+console.log( "ok" );
