@@ -34,10 +34,11 @@
               			"file": "empt.js",
               			"module": "empt",
               			"author": "Richeve S. Bebedor",
-              			"contributors": [
-              				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
-              			],
               			"eMail": "richeve.bebedor@gmail.com",
+              			"contributors": [
+              				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+              				"Vinse Vinalon <vinsevinalon@gmail.com>"
+              			],
               			"repository": "https://github.com/volkovasystems/empt.git",
               			"test": "empt-test.js",
               			"global": true
@@ -52,14 +53,12 @@
               		{
               			"doubt": "doubt",
               			"kount": "kount",
-              			"protype": "protype"
               		}
               	@end-include
-              */
+              */var _typeof2 = require("babel-runtime/helpers/typeof");var _typeof3 = _interopRequireDefault(_typeof2);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 var doubt = require("doubt");
 var kount = require("kount");
-var protype = require("protype");
 
 var empt = function empt(object) {
 	/*;
@@ -70,7 +69,7 @@ var empt = function empt(object) {
                                   	@end-meta-configuration
                                   */
 
-	if (!protype(object, OBJECT) || doubt(object, AS_ARRAY)) {
+	if ((typeof object === "undefined" ? "undefined" : (0, _typeof3.default)(object)) != "object" || doubt(object, AS_ARRAY)) {
 		throw new Error("invalid object");
 	}
 

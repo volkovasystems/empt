@@ -2,7 +2,6 @@ yarn add \
 babel-runtime \
 doubt \
 kount \
-protype \
 --save && \
 yarn add \
 babel-cli \
@@ -15,6 +14,5 @@ webpack \
 bower install \
 doubt \
 kount \
-protype \
 --save \
 --force-latest
