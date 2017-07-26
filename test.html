@@ -1,8 +1,28 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<script
-			type="application/javascript"
-			src="./empt.deploy.js">
-		</script>
+		<title>empt unit test</title>
+
+		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+
+		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
+
+		<script type="application/javascript" src="./empt.deploy.js"></script>
 	</head>
+
+	<body>
+		<div id="qunit"></div>
+
+		<div id="qunit-fixture"></div>
+
+		<script type="application/javascript">
+			QUnit.test( "empt unit test", function( assert ) {
+
+				assert.equal( empt( { } ), true, "should be equal to true" );
+
+				assert.equal( empt( { "name": "simple" } ), false, "should be equal to false" );
+
+			} );
+		</script>
+	</body>
 </html>
