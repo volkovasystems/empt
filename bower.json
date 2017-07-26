@@ -1,31 +1,31 @@
 {
-  "name": "empt",
-  "version": "0.26.0",
-  "description": "Check if object has no enumerable properties.",
-  "main": "empt.deploy.js",
-  "support": "empt.support.js",
-  "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "keywords": [
-    "check",
-    "object",
-    "empty",
-    "empt"
-  ],
-  "homepage": "https://github.com/volkovasystems/empt",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "doubt": "^0.30.0",
-    "kount": "^0.11.0"
-  }
+	"name": "empt",
+	"version": "0.27.0",
+	"description": "Check if object has no enumerable properties.",
+	"main": "empt.deploy.js",
+	"support": "empt.support.js",
+	"authors": [
+		"Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"check",
+		"object",
+		"empty",
+		"empt"
+	],
+	"homepage": "https://github.com/volkovasystems/empt",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"doubt": "^0.34.0",
+		"kount": "^0.12.0"
+	}
 }
