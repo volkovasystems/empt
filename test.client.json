@@ -1,0 +1,116 @@
+{
+	"state": {
+		"passed": 2,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-25T03:39:04.451Z",
+	"end": "2017-08-25T03:39:37.033Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "empt",
+			"duration": 0,
+			"start": "2017-08-25T03:39:36.644Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "empt",
+			"duration": 206,
+			"start": "2017-08-25T03:39:36.645Z",
+			"end": "2017-08-25T03:39:36.851Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-25T03:39:36.647Z",
+					"end": "2017-08-25T03:39:36.648Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "empt",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-25T03:39:36.787Z",
+					"end": "2017-08-25T03:39:36.788Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "empt",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-25T03:39:36.788Z",
+					"end": "2017-08-25T03:39:36.789Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "empt",
+					"associatedTest": "should be equal to false"
+				},
+				{
+					"start": "2017-08-25T03:39:36.850Z",
+					"end": "2017-08-25T03:39:36.850Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "empt",
+					"associatedTest": "should be equal to false"
+				},
+				{
+					"start": "2017-08-25T03:39:36.851Z",
+					"end": "2017-08-25T03:39:36.851Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "empt"
+				}
+			]
+		},
+		{
+			"name": "`empt( { } )`",
+			"duration": 142,
+			"start": "2017-08-25T03:39:36.646Z",
+			"end": "2017-08-25T03:39:36.788Z",
+			"tests": [
+				{
+					"name": "should be equal to true",
+					"start": "2017-08-25T03:39:36.647Z",
+					"end": "2017-08-25T03:39:36.787Z",
+					"duration": 140,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`empt( { 'name': 'simple' } )`",
+			"duration": 62,
+			"start": "2017-08-25T03:39:36.788Z",
+			"end": "2017-08-25T03:39:36.850Z",
+			"tests": [
+				{
+					"name": "should be equal to false",
+					"start": "2017-08-25T03:39:36.788Z",
+					"end": "2017-08-25T03:39:36.850Z",
+					"duration": 62,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

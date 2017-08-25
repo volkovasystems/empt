@@ -91,6 +91,18 @@ describe( "empt", ( ) => {
 
 describe( "empt", ( ) => {
 
+	describe( "`empt( { } )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+			assert.equal( empt( { } ), true );
+		} );
+	} );
+
+	describe( "`empt( { 'name': 'simple' } )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+			assert.equal( empt( { "name": "simple" } ), false );
+		} );
+	} );
+
 } );
 
 //: @end-client
@@ -100,5 +112,40 @@ describe( "empt", ( ) => {
 
 describe( "empt", ( ) => {
 
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
+	describe( "`empt( { } )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return empt( { } );
+				}
+
+			).value;
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`empt( { 'name': 'simple' } )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return empt( { "name": "simple" } );
+				}
+
+			).value;
+
+			assert.equal( result, false );
+			
+		} );
+	} );
+
 } );
+
 //: @end-bridge
