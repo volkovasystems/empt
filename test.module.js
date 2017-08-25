@@ -69,6 +69,19 @@ const path = require( "path" );
 //: @server:
 
 describe( "empt", ( ) => {
+
+	describe( "`empt( { } )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+			assert.equal( empt( { } ), true );
+		} );
+	} );
+
+	describe( "`empt( { 'name': 'simple' } )`", ( ) => {
+		it( "should be equal to false", ( ) => {
+			assert.equal( empt( { "name": "simple" } ), false );
+		} );
+	} );
+
 } );
 
 //: @end-server
